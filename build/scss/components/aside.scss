@@ -1,0 +1,116 @@
+.main__aside {
+	float: left;
+	width: 214px;
+	padding: 18px 0 0 0;
+}
+.main__contacts-us {
+	margin: 0 0 25px 0;
+	padding: 16px 12px 28px 12px;
+	background-color: #f3f3f3;
+	border: 1px solid #ccc;
+	input {
+		display: block;
+		width: 100%;
+		height: 30px;
+		margin: 0 0 16px 0;
+		line-height: 30px;
+		background-color: #e3e4e5;
+		border: none;
+		outline: none;
+		padding: 0;
+		box-shadow: inset 0 1px 5px #bbb;
+		border-radius: 3px;
+		text-indent: 10px;
+		font-size: em(14px);
+	}
+	label {
+		position: relative;
+		display: block;
+		margin: 0 0 16px 0;
+		border: 1px solid #aaa;
+		border-radius: 3px;
+		&:after {
+			content: '';
+			position: absolute;
+			z-index: 1;
+			right: 10px;
+			top: 13px;
+			border: 6px solid transparent;
+			border-top: 6px solid #888;	
+		}
+	}
+	select {
+		display: block;
+		width: 100%;
+		padding: 0 0 0 9px;
+		box-sizing: border-box;
+		height: 30px;
+		line-height: 30px;
+		background-color: #e3e4e5;
+		border: none;
+		outline: none;
+		box-shadow: none;
+		text-indent: 0;
+		font-size: em(14px);
+		border-radius: 3px;
+		cursor: pointer;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		-ms-appearance: none;
+		-o-appearance: none;
+		appearance: none!important;
+		&::-ms-expand {
+			display: none;
+		}
+	}
+	button {
+		padding: 8px 15px;
+		border: 4px solid #fff;
+		background-color: lighten($main-color, 10%);
+		color: #fff;
+		font-size: em(16px);
+		box-shadow: 0 3px 10px 0 #bbb;
+		transition: color .5s ease, border-color .5s ease, background-color .5s ease;
+		&:hover, &:active, &:focus {
+			color: lighten($main-color, 10%);
+			background-color: #fff;
+			border-color: lighten($main-color, 10%);
+		}
+	}
+}
+.main__contacts-us-title {
+	margin: 0 0 16px 0;
+	font-size: em(18px);
+	font-weight: 600;
+	color: #111;
+}
+.main__article {
+
+}
+.main__article-title {
+	margin: 0 0 10px 0;
+	color: #111;
+	font-weight: 600;
+	h4 {
+		margin: 0;
+		font-size: em(18px);
+	}
+}
+.main__article-text {
+	margin: 0 0 10px 0;
+		line-height: 1.6;
+	p {
+		margin: 0;
+		font-size: em(12px);
+	}
+}
+.main__article-link {
+	a {
+		font-size: em(12px);
+		color: $main-color;
+		transition: color .5s ease;
+		&:hover, &:active, &:focus {
+			color: lighten($main-color, 30%);
+		}
+	}
+}
